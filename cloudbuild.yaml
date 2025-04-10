@@ -11,3 +11,5 @@ steps:
   args: ['run', 'deploy', 'myweb-autodeployment', '--image', 'us-west1-docker.pkg.dev/imerlos-dev/quickstart-docker-repo/my-web:v1', '--region', 'us-west1', --allow-unauthenticated]
 images:
 - 'us-west1-docker.pkg.dev/imerlos-dev/quickstart-docker-repo/my-web:v1'
+options:
+  logging: CLOUD_LOGGING_ONLY
