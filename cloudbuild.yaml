@@ -1,8 +1,5 @@
 steps:
 # Build the image
-- name: 'gcr.io/cloud-builders/curl'
-  entrypoint: 'curl'
-  args: ['example.com']
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'us-west1-docker.pkg.dev/imerlos-dev/quickstart-docker-repo/my-web:v1', '.']
 # Push the image to Artifact Registry
